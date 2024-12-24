@@ -1,88 +1,133 @@
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     box-sizing: border-box;
 }
 
+body {
+    font-family: Arial, sans-serif;
+}
 
-h1 {
+/* Header Styling */
+header {
+    background-color: #333;
+    color: white;
+    padding: 60px 20px;
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #2f8ae4;
     text-align: center;
+}
+
+nav a {
     color: #333;
+    text-decoration: none;
+    margin: 0 10px;
 }
 
-input[type="text"] {
-    padding: 10px;
-    width: 250px;
-    font-size: 16px;
-    border: 2px solid #ccc;
-    border-radius: 5px;
-    margin-right: 10px;
-    outline: none;
-    transition: border-color 0.3s;
+nav a:hover {
+    color: #007bff;
 }
 
-input[type="text"]:focus {
-    border-color: #4CAF50;
-}
-
-
-button {
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-
-
-
-ul#task-list {
-    list-style-type: none;
-    padding: 0;
-    width: 300px;
-    margin-top: 20px;
-}
-
-
-ul#task-list li {
-    background-color: white;
-    border: 1px solid #ddd;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: space-between;
+nav .navbar-nav {
     align-items: center;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
 }
 
-
-deletebutton {
-    background-color: #f33224;
-    color: white;
-    border-radius: 5px;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-    font-size: 14px;
-    transition: background-color 0.3s;
+nav .navbar-nav .nav-item {
+    margin: 0 15px;
 }
 
-button.delete:hover {
-    background-color: #e53935;
+nav .navbar-light .navbar-nav .nav-link {
+    font-weight: 500;
 }
 
-span {
-    font-size: 18px;
+/* Section Styling */
+section {
+    padding: 60px 20px;
+}
+
+section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Skills Section */
+.skills i {
+    margin: 10px;
+    color: #007bff;
+    text-align: center;
+}
+
+/* Projects Section */
+.project img {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.project img:hover {
+    transform: scale(1.05);
+}
+
+/* Contact Section */
+#contact p {
+    font-size: 1.1rem;
     color: #333;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #f8f9fa;
+    padding: 30px 20px;
+}
+
+footer p {
+    font-size: 1rem;
+    color: #333;
+}
+
+.social-icons {
+    margin-top: 15px;
+}
+
+.social-icons a {
+    color: #333;
+    margin: 0 10px;
+}
+
+.social-icons a:hover {
+    color: #007bff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .skills i {
+        font-size: 2.5rem;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .project img {
+        width: 100%;
+    }
 }
